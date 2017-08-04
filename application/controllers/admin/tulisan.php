@@ -12,7 +12,6 @@ class Tulisan extends CI_Controller{
 		$this->load->library('upload');
 	}
 
-
 	function index(){
 		$x['data']=$this->m_tulisan->get_all_tulisan();
 		$this->load->view('admin/v_tulisan',$x);
